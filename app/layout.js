@@ -10,9 +10,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Expentrix",
   description: "AI-powered expense tracking that keeps things fair, fast, and frustration-free.",
-   icons: {
-    icon: "/logos/logo-s-new3.png",
-  },
+    icon: [
+      { url: "/logos/logo-s-new3.png", type: "image/png" },
+    ],
 };
 
 export default function RootLayout({ children }) {
