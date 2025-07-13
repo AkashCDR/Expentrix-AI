@@ -10,17 +10,11 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Expentrix",
   description: "AI-powered expense tracking that keeps things fair, fast, and frustration-free.",
-    icon: [
-      { url: "/logos/logo-s-new3.png", type: "image/png" },
-    ],
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <>
-        <link rel="icon" href="/logos/logo-s-new3.png" sizes="any" />
-      </>
       <body className={`${inter.className} bg-[#bfd7ed]`}>
         <ClerkProvider
           publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}
